@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(3, 98, 194);
+    font-family: "Monaco", monospace;
+}
+.whole-body{
+    display: flex;
+}
+.myheading{
+    margin: 45px auto;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+}
+h1{
+    margin: 10px auto;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-height: 500px;
+    background-color: white;
+    margin-top: 80px;
+    margin-left: 80px;
+    border-radius: 12px;
+}
+
+.inp_parent {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 98%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.input_taken {
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    width: 56%;
+    border: 3px solid rgb(3, 98, 194);
+    border-radius: 5px;
+    margin: 20px auto;
+    padding-left: 5px;    
+}
+
+.btn {
+    background-color: rgb(3, 98, 194);
+    color: white;
+    font-size: 1em;
+    width: 14%;
+    height: 45px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(224, 223, 223);
+    color: rgb(3, 98, 194);
+    font-weight: bold;
+}
+
+.createdElements {
+    display: flex;
+    flex-direction: column; /* Ensure tasks are displayed in a column */
+    width: 100%;
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    width: 95%;
+    height: 50px;
+    font-size: 1.3em;
+    margin: 8px auto;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.task-container p {
+    flex: 1; /* Allow the task text to grow */
+    margin-right: 5px; /* Add spacing between task text and buttons */
+    padding-left: 8px;
+}
+
+.del-btn, .edit-btn {
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 8%; /* Ensure buttons adjust to content width */
+    height: 38px;
+    background-color: rgb(43, 8, 139);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+}
+.del-btn:hover {
+    font-size: 0.7em;
+    cursor: pointer;
+} 
+.edit-btn:hover{
+    font-size: 0.7em;
+    cursor: pointer;
+}
